@@ -7,31 +7,31 @@ titleTemplate: Lightweight log monitoring framework
 
 hero:
     name: LogonTracer
-    text: Lightweight log monitoring framework
-    tagline: Monitor the specified exception thrown in the log or the specified exception thrown in the method and class
+    text: 轻量级日志监控框架
+    tagline: 监视在日志中抛出的指定异常或在方法和类中抛出的指定异常
     image:
       src: /logo.svg
       alt: logon-tracer
     actions:
       - theme: brand
-        text: Get Started
+        text: 快速开始
         link: /guide/
       - theme: alt
-        text: Features
+        text: 特点
         link: /demo/
       - theme: alt
-        text: why LogonTracer?
+        text: 什么是 LogonTracer?
         link: /guide/why
       - theme: alt
-        text: View on GitHub
+        text: 查看源码
         link: https://github.com/logon-tracer/core
 features:
-  - title: Spring Powered
-    details: Support SpringMVC and SpringBoot.
-  - title: Annotation
-    details: Monitoring mode can be controlled using annotations.
-  - title: Simple configuration
-    details: Simple configuration based on major log frameworks
-  - title: custom monitoring
-    details: Support custom monitoring log and custom sending process
+  - title: 基于Spring
+    details: 支持SpringMVC和SpringBoot。
+  - title: 注解
+    details: 可以使用注释控制监视模式。
+  - title: 简单的配置
+    details: 基于主要日志框架的简单配置
+  - title: 自定义监控
+    details: 支持自定义监控日志和自定义发送流程
 ---

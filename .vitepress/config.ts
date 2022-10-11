@@ -4,7 +4,7 @@ import { description, discord, font, github, name, releases, twitter,} from './m
 const version = '0.0.0'
 
 export default defineConfig({
-    lang: 'en-US',
+    lang: 'zh-CN',
     title: name,
     description,
     head: [
