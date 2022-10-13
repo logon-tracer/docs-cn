@@ -41,7 +41,8 @@ export default defineConfig({
             copyright: 'Copyright © 2022-PRESENT Elone Hoo',
         },
         nav: [
-            { text: 'Guide', link: '/guide/' },
+            { text: '指南', link: '/guide/' },
+            { text: '配置', link: '/config/' },
             {
                 text: `v${version}`,
                 items: [
@@ -53,7 +54,26 @@ export default defineConfig({
             },
         ],
         sidebar: {
-            '/':[]
+            '/':[
+              {
+                text:'指引',
+                items:[
+                  {
+                    text:'开始',
+                    link:'/guide/'
+                  }
+                ]
+              },
+              {
+                text:'配置日志',
+                items:[
+                  {
+                    text:'log4j',
+                    link:'/config/#log4j'
+                  }
+                ]
+              }
+            ]
         }
     },
 })
