@@ -1,6 +1,6 @@
 export const name = 'LogonTracer'
 export const shortName = 'logon-tracer'
-export const description = 'Lightweight log monitoring framework'
+export const description = '轻量级日志监控框架'
 
 /* CDN fonts and styles */
 export const googleapis = 'https://fonts.googleapis.com'

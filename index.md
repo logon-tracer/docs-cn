@@ -3,7 +3,7 @@ layout: home
 sidebar: false
 
 title: LogonTracer
-titleTemplate: Lightweight log monitoring framework
+titleTemplate: 轻量级日志监控框架
 
 hero:
     name: LogonTracer
@@ -18,7 +18,7 @@ hero:
         link: /guide/
       - theme: alt
         text: 特点
-        link: /demo/
+        link: /guide/features
       - theme: alt
         text: 什么是 LogonTracer?
         link: /guide/why

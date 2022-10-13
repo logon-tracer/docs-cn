@@ -28,8 +28,8 @@ export default defineConfig({
     themeConfig: {
         logo: '/logo.svg',
         editLink: {
-            pattern: 'https://github.com/elonehoo/logon-tracer/tree/main/docs/:path',
-            text: 'Suggest changes to this page',
+            pattern: 'https://github.com/logon-tracer/docs-cn/tree/main/:path',
+            text: '为此页提供修改建议',
         },
         socialLinks: [
             { icon: 'twitter', link: twitter },
