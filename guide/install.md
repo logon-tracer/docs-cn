@@ -23,7 +23,7 @@ git clone https://github.com/logon-tracer/core.git
 
 ### 注解方式
 :::warning
-须知：不可用于接口([因素](https://www.baidu.com))
+须知：不可用于接口([因素](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#aop-pointcuts-designators)-@within切入点指示符限制)
 
 注解@Alarm用于实现类或方法上
 :::
