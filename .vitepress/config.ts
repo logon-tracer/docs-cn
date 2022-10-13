@@ -56,11 +56,15 @@ export default defineConfig({
         sidebar: {
             '/':[
               {
-                text:'指引',
+                text:'快速开始',
                 items:[
                   {
-                    text:'开始',
+                    text:'安装',
                     link:'/guide/'
+                  },
+                  {
+                    text:'使用',
+                    link:'/guide/usage'
                   }
                 ]
               },
