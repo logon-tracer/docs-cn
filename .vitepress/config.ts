@@ -63,8 +63,8 @@ export default defineConfig({
                     link:'/guide/'
                   },
                   {
-                    text:'使用',
-                    link:'/guide/usage'
+                    text:'安装',
+                    link:'/guide/install'
                   }
                 ]
               },
