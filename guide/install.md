@@ -23,7 +23,7 @@ git clone https://github.com/logon-tracer/core.git
 
 ### 注解方式
 :::warning
-须知：不可用于接口
+须知：不可用于接口([因素](https://www.baidu.com))
 
 注解@Alarm用于实现类或方法上
 :::
@@ -60,3 +60,25 @@ git clone https://github.com/logon-tracer/core.git
 > ```
 > 结果异常（例：RuntimeException）
 
+## 自定义模板
+
+> 使用样例
+> ```java
+> @Component
+> public class CustomAlarmMessageContext implements AlarmMessageContext {
+>   /**
+>   * Customize the content sent to mail.
+>   *
+>   * @param context   The alarm log info.
+>   * @param throwable The throwable that was caught.
+>   * @param config    The config context.
+>   * @return Content sent to mail.
+>   */
+>   @Override
+>   public AlarmMailContent mailContent(AlarmInfoContext context, Throwable throwable, AlarmLogSimpleConfig config) {
+>       ...
+>       return new AlarmMailContent(context.getMessage(), context.getClassName());
+>   }
+> }
+> ```
+> 实现 logon.tracer.context.AlarmMessageContext接口，自定义邮件内容格式，支持html标签
