@@ -56,7 +56,7 @@ export default defineConfig({
         sidebar: {
             '/':[
               {
-                text:'快速开始',
+                text:'指引',
                 items:[
                   {
                     text:'开始',
