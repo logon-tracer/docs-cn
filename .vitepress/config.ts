@@ -59,13 +59,13 @@ export default defineConfig({
                 text:'指引',
                 items:[
                   {
-                    text:'开始',
-                    link:'/guide/'
+                    text:'简介',
+                    link:'/guide/why'
                   },
                   {
-                    text:'安装',
-                    link:'/guide/install'
-                  }
+                    text:'快速起步',
+                    link:'/guide/'
+                  },
                 ]
               },
               {

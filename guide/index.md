@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # 快速起步
 
 ## 总览
@@ -12,3 +16,79 @@ LogonTracer 应运而生，他能及时在目标服务器出现错误而导致�
 
 - JDK >= 11.0.3
 - Maven >= 3.6.3
+
+## 安装
+
+## 配置
+
+## 使用
+
+使用错误日志发送邮件功能共有如下两种方式：
+
+- [采用注解方式(**推荐**)](#注解方式)
+- [采用API方式](#api方式)
+
+### 注解方式
+
+:::warning 警告
+
+- 不可用于接口
+
+- 注解`@Alarm`用于实现类或方法上
+
+:::
+
+```java
+@Service
+@Alarm(doWarnException = Exception.class, warnExceptionExtend = true)
+public class TestServiceImpl implements TestService {
+  @Override
+  public String test1() {
+      int num = 10 / 0;
+      return String.valueOf(num);
+  }
+}
+```
+
+### API方式
+
+```java
+@Service
+public class TestServiceImpl implements TestService {
+  @Override
+  public String test1() {
+      // 通过AlarmLogHelper获取实例，发送错误邮件
+      AlarmLogHelper.getPrintLogInstance(true).error("123", new RuntimeException());
+       ...
+  }
+}
+```
+
+## 自定义模板
+
+```java
+@Component
+public class CustomAlarmMessageContext implements AlarmMessageContext {
+  /**
+  * Customize the content sent to mail.
+  *
+  * @param context   The alarm log info.
+  * @param throwable The throwable that was caught.
+  * @param config    The config context.
+  * @return Content sent to mail.
+  */
+  @Override
+  public AlarmMailContent mailContent(AlarmInfoContext context, Throwable throwable, AlarmLogSimpleConfig config) {
+      ...
+      return new AlarmMailContent(context.getMessage(), context.getClassName());
+  }
+}
+```
+
+## 使用未发布的功能
+
+如果你迫不及待想要体验最新的功能，可以自行克隆 [LogonTracer](https://github.com/logon-tracer/core) 仓库 到本地机器上然后自行将其链接（将需要 Maven）：
+
+```bash
+git clone https://github.com/logon-tracer/core.git
+```
