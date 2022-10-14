@@ -66,6 +66,10 @@ export default defineConfig({
                     text:'快速起步',
                     link:'/guide/'
                   },
+                  {
+                    text:'特点',
+                    link:'/guide/features'
+                  }
                 ]
               },
               {
