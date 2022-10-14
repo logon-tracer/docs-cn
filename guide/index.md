@@ -19,7 +19,54 @@ LogonTracer 应运而生，他能及时在目标服务器出现错误而导致�
 
 ## 安装
 
+在项目的pom.xml的dependencies中加入以下内容:
+
+```xml
+<dependency>
+  <groupId>logon.tracer</groupId>
+  <artifactId>logon-tracer</artifactId>
+  <version>0.0.1</version>
+</dependency>
+```
+
 ## 配置
+
+yaml配置如下：
+
+```yaml
+spring:
+  alarm-log:
+    warn:
+      mail:
+        # 开启错误日志告警，default:false
+        enabled: true
+        # 发送邮件服务器 例：smtp.qq.com
+        smtpHost:
+        # 邮件服务器端口号 例：465
+        smtpPort:
+        # 邮件接收者，多个接收者用‘,’分隔，例：xxxxxx@qq.com,xxxxxxxx@qq.com
+        to:
+        # 邮件发送者， 例：xxxxxx@qq.com
+        from:
+        # 邮件发送者用户名
+        username:
+        # 邮件发送者密码
+        password:
+      # 是否开启警告异常扩展，default:false
+      warn-exception-extend:
+      # 是否使用简单邮件样式，default:false
+      simple-warn-info:
+      # 是否显示堆栈信息，default:false
+      print-stack-trace:
+      # 最大重试次数，default: 3
+      max-retry-times:
+      # 重试时间
+      retry-sleep-millis:
+      # 全局需检测的警告异常
+      do-warn-exception:
+        - java.lang.Throwable
+        - java.lang.Exception
+```
 
 ## 使用
 
