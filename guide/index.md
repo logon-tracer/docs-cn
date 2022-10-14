@@ -19,16 +19,6 @@ LogonTracer 应运而生，他能及时在目标服务器出现错误而导致�
 
 ## 安装
 
-在项目的pom.xml的dependencies中加入以下内容:
-
-```xml
-<dependency>
-  <groupId>logon.tracer</groupId>
-  <artifactId>logon-tracer</artifactId>
-  <version>0.0.1</version>
-</dependency>
-```
-
 ## 配置
 
 yaml配置如下：
