@@ -63,12 +63,20 @@ export default defineConfig({
                     link:'/guide/why'
                   },
                   {
-                    text:'快速起步',
+                    text:'开始',
                     link:'/guide/'
                   },
                   {
                     text:'特点',
                     link:'/guide/features'
+                  },
+                  {
+                    text:'备份',
+                    link:'/guide/index-backup'
+                  },
+                  {
+                    text:'属性列表',
+                    link:'/guide/settings'
                   }
                 ]
               },
