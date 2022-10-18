@@ -4,7 +4,7 @@
 
 LogonTracer 是一个由Spring支持的轻量级日志监控框架。
 
-您可以在 [什么是 LogonTracer](./Why) 部分了解更多关于项目背后的基本原理。
+您可以在 [什么是 LogonTracer](./why) 部分了解更多关于项目背后的基本原理。
 
 ## 添加 Vitest 到您的项目
 
