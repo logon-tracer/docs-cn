@@ -1,13 +1,19 @@
 # 为什么是 LogonTracer
 
-::: tip 提示
-本文档假设你是理解 Java 和 Spring 的。开始阅读之前建议先浏览 [为什么选择Spring](https://spring.io/why-spring) 和 [Java现在的变化](https://www.oracle.com/cn/java/)。
+::: tip 注意
+本指南假设您熟悉Spring。开始学习更多知识的一个好方法是阅读 [Why Spring Guide](https://spring.io/why-spring) 和 [SpringBoot从0到1](https://tanzu.vmware.com/content/springone-platform-2017/from-zero-to-hero-with-spring-boot-brian-clozel) ， [Brian Clozel](https://twitter.com/bclozel) 在其中做了一个演示解释了主要用法。
 :::
 
-## Spring 原生日志报警的必要性
+## 需要Spring本地日志告警
 
-Spring 是一个在 Java 生态中不可获取的一部分组件，同时支持了Web开发和微服务等功能，而且它拥有许多插件和集成框架，从而慢慢形成一个活跃的生态社区。它的开发和构建模式是其成功的关键。对于日志报警，市面上已经有的现成项目，功能过于繁多和笨重，对于大部分的应用只需要一个简单的报警功能就好，那么我想 LogonTracer 是可以成为这些应用的选择之一。
+Spring 对常见 web 模式的开箱即用的支持、控制倒置和依赖注入等特性以及它的许多插件和集成正在培育一个充满活力的生态系统。它的开发和构建故事是其成功的关键。不过，Spring 的日志警报故事还不清楚。
 
-**LogonTracer 旨在将自己定位为 Spring 项目的首选日志报警框架，即使对于不使用 Spring 的项目也是一个可靠的替代方案。**
+在开发过程中查看日志可以直接控制、快速、准确地捕获错误。然而，一旦开发逐渐完成，部署服务器上出现错误，就很难快速了解甚至定位错误生成的日志。如果我们在 Spring App 中发现了一些意想不到的错误，并发送电子邮件通知开发人员，那么这可以帮助开发人员快速定位和解决错误。
 
-继续阅读 [快速起步](./)
+考虑到 Log4j2 和 LogBack 或 Log4j 的大规模采用，LogonTracer 提供了一个兼容的 API，可以与它们中的任何一个完美兼容，没有区别。并且有一个开箱即用的电子邮件模板，它可以准确地通知开发人员错误的详细位置。
+
+![log template](/log_template.png)
+
+LogonTracer的目标是将自己定位为Spring项目的日志报警选择，甚至是不使用Spring的项目的可靠替代方案。
+
+继续阅读 [快速起步](./index.html)

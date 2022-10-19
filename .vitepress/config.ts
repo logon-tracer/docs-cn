@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { description, discord, font, github, name, releases, twitter,} from './meta'
 
-const version = '0.0.0'
+const version = '0.0.1'
 
 export default defineConfig({
     lang: 'zh-CN',
@@ -36,12 +36,19 @@ export default defineConfig({
             { icon: 'discord', link: discord },
             { icon: 'github', link: github },
         ],
+      localeLinks: {
+        text: '简体中文',
+        items: [
+          { text: 'English', link: 'https://logon-tracer.elonehoo.xyz/guide/' },
+        ],
+      },
         footer: {
             message: 'Released under the MIT License.',
             copyright: 'Copyright © 2022-PRESENT Elone Hoo',
         },
         nav: [
             { text: '指南', link: '/guide/' },
+            { text: 'API', link: '/api/' },
             { text: '配置', link: '/config/' },
             {
                 text: `v${version}`,
@@ -70,13 +77,18 @@ export default defineConfig({
                     text:'特点',
                     link:'/guide/features'
                   },
-                  /*{
-                    text:'备份',
-                    link:'/guide/index-backup'
-                  },*/
                   {
-                    text:'属性列表',
-                    link:'/guide/settings'
+                    text:'自定义邮件',
+                    link:'/guide/content'
+                  }
+                ]
+              },
+              {
+                text:'API',
+                items:[
+                  {
+                    text:'API 参考',
+                    link:'/api/'
                   }
                 ]
               },
@@ -86,6 +98,10 @@ export default defineConfig({
                   {
                     text:'log4j',
                     link:'/config/#log4j'
+                  },
+                  {
+                    text:'属性列表',
+                    link:'/config/settings'
                   }
                 ]
               }
