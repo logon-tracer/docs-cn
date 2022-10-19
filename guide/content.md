@@ -6,7 +6,7 @@
 
 ## 创建一个 `CustomAlarmMessageContext` class文件
 
-- 使 `CustomAlarmMessageContext` 实现 `CustomAlarmMessageContext` 接口
+- 使 `CustomAlarmMessageContext` 实现 `AlarmMessageContext` 接口
 
 ```java
 import logon.tracer.context.AlarmInfoContext;
@@ -16,7 +16,7 @@ import logon.tracer.dto.AlarmMailContent;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CustomAlarmMessageContext1 implements AlarmMessageContext {
+public class CustomAlarmMessageContext implements AlarmMessageContext {
   /**
    * 自定义发送邮件的内容.
    *
