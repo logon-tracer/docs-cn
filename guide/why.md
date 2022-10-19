@@ -14,6 +14,6 @@ Spring 对常见 web 模式的开箱即用的支持、控制倒置和依赖注�
 
 ![log template](/log_template.png)
 
-LogonTracer的目标是将自己定位为Spring项目的日志报警选择，甚至是不使用Spring的项目的可靠替代方案。
+LogonTracer 的目标是将自己定位为 Spring 项目的日志报警选择，甚至是不使用 Spring 的项目的可靠替代方案。
 
 继续阅读 [快速起步](./index.html)

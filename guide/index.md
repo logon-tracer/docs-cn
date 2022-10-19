@@ -2,7 +2,7 @@
 
 ## 总览
 
-LogonTracer 是一个由Spring支持的轻量级日志监控框架。
+LogonTracer 是一个由 Spring 支持的轻量级日志监控框架。
 
 您可以在 [简介](./why) 部分了解更多关于项目背后的基本原理。
 
@@ -55,7 +55,7 @@ LogonTracer 要求 JDK >=v11.0.3 和 Maven >= v3.6.3
 
 ## 配置 LogonTracer
 
-LogonTracer的主要优点之一是它与Spring的统一配置。
+LogonTracer 的主要优点之一是它与 Spring 的统一配置。
 
 如果存在，LogonTracer 将读取您的资源文件夹中 application.yml 文件来匹配插件并设置您的 Spring 应用程序。例如，您的邮件格式和拦截异常将开箱即用。如果你想在发送日志期间进行不同的配置，你可以:
 

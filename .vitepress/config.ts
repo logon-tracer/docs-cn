@@ -93,15 +93,11 @@ export default defineConfig({
                 ]
               },
               {
-                text:'配置日志',
+                text:'配置',
                 items:[
                   {
-                    text:'log4j',
-                    link:'/config/#log4j'
-                  },
-                  {
-                    text:'属性列表',
-                    link:'/config/settings'
+                    text:'配置参考',
+                    link:'/config/'
                   }
                 ]
               }
