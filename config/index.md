@@ -20,7 +20,6 @@ SpringBoot 项目可以直接安装 SpringBoot 的解决方案。
 
 ```yaml
 spring:
-  spring:
   alarm-log:
     warn:
       mail:
